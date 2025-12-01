@@ -121,6 +121,134 @@ footer a:hover {
 section, header, footer {
   animation: fadeIn 1s ease-in-out;
 }
+/* Import d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary: #2563eb;   /* Bleu principal */
+  --secondary: #1e40af; /* Bleu foncé */
+  --background: #0f172a; /* Fond sombre */
+  --text: #f1f5f9;      /* Texte clair */
+  --accent: #38bdf8;    /* Cyan accent */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+header p {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Sections */
+section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Titres */
+h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Listes */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+ul li {
+  background: rgba(37,99,235,0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+  background: rgba(37,99,235,0.4);
+  transform: scale(1.05);
+}
+
+/* Projets */
+#projects ul li {
+  background: rgba(30,64,175,0.3);
+  border-left: 5px solid var(--primary);
+}
+
+/* Footer */
+footer {
+  background: #0a0f1c;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Animations */
+section, header, footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
