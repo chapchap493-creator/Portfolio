@@ -1,0 +1,116 @@
+/* Style global */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f9fafb;
+  line-height: 1.7;
+}
+
+/* En-tête */
+header {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  margin: 0.5rem 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+header p {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Titres */
+h2 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Listes */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(37,99,235,0.2);
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+ul li:hover {
+  background: rgba(37,99,235,0.4);
+}
+
+/* Projets */
+.project {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(30,64,175,0.3);
+  border-left: 5px solid #2563eb;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #93c5fd;
+}
+
+/* Animation subtile */
+section, header, footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
